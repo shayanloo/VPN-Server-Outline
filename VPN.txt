@@ -14,6 +14,7 @@ Website: https://getoutline.org/
 
 - Install Docker
 --> sudo curl -sS https://get.docker.com/ | sh
+--> sudo bash -c "$(wget -qO- https://get.docker.com/)"
 
 - Start The Docker
 --> sudo systemctl start docker
