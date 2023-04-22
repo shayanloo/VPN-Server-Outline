@@ -1,0 +1,30 @@
+.....::::: VPN-Server (Outline) ::::....
+Your IP: ***.**.*.*
+Your Password: ******
+
+Outline makes it easy to create a VPN server, giving anyone access to the free and open Internet.
+Outline enables anyone to access the free and open Internet more safely by running their own VPN. Running your own VPN server through Outline makes accessing the Internet safer and establishes a connection that is harder to block.
+Website: https://getoutline.org/
+
+- Change Password
+--> sudo passwd
+
+- Update The Server
+--> sudo -- sh -c 'apt-get update; apt-get upgrade -y; apt-get dist-upgrade -y; apt-get autoremove -y; apt-get autoclean -y'
+
+- Install Docker
+--> sudo curl -sS https://get.docker.com/ | sh
+
+- Start The Docker
+--> sudo systemctl start docker
+
+- Enable Docker
+--> sudo systemctl enable docker
+
+- Check Status
+--> sudo sudo systemctl status docker
+
+--> systemctl restart NetworkManager
+--> sudo iptables -F
+
+===> sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh)"
